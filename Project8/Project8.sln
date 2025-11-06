@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "T8_PraktijkProject", "T8_PraktijkProject", "{7D62F390-AECC-44FD-9031-69AC728862A1}"
+	ProjectSection(SolutionItems) = preProject
+		ORMModel1.orm = ORMModel1.orm
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T8_VoetbalToernooi", "T8_VoetbalToernooi\T8_VoetbalToernooi.csproj", "{DC3258FA-4B1A-496D-9AE8-D184CB013082}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T8_VoetbalToernooiTests", "T8_VoetbalToernooiTests\T8_VoetbalToernooiTests.csproj", "{E23547C8-0FF2-47DE-82B6-789DEDB9A61F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC3258FA-4B1A-496D-9AE8-D184CB013082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC3258FA-4B1A-496D-9AE8-D184CB013082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC3258FA-4B1A-496D-9AE8-D184CB013082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC3258FA-4B1A-496D-9AE8-D184CB013082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E23547C8-0FF2-47DE-82B6-789DEDB9A61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E23547C8-0FF2-47DE-82B6-789DEDB9A61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E23547C8-0FF2-47DE-82B6-789DEDB9A61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E23547C8-0FF2-47DE-82B6-789DEDB9A61F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC3258FA-4B1A-496D-9AE8-D184CB013082} = {7D62F390-AECC-44FD-9031-69AC728862A1}
+	EndGlobalSection
+EndGlobal
