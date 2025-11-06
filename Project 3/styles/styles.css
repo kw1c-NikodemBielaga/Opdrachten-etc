@@ -1,0 +1,203 @@
+/*Autheur:         Ties de Bruijn*/
+/*Aanmaakdatum:   <02-23-2024>*/
+
+/*<Namaak van de Veba-solar site>*/
+
+/*Load character set*/
+@charset "UTF-8";
+/*load Lato Font*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+html
+{
+    /* make acher scroll smooth */
+    scroll-behavior: smooth;
+}
+
+body
+{
+    /* Remove Padding and Margin */
+    margin: 0px;
+    padding: 0px;
+    /* add scrollbar */
+    overflow-y: scroll;
+    /* set lato font */
+    font-family: "Lato";
+    /* set font size */
+    font-size: 20px;
+    /* set font weight */
+    font-weight: 300;
+}
+
+header
+{
+    /* set size */
+    height: 90px;
+    width: 100%;
+    /* set Background Image Properties */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header>span
+{
+    /* remove Margin*/
+    margin: 0px 0px 0px 0px;
+    /* add padding*/
+    padding: 25px 0px 0px 25px;
+    /* set postition*/
+    position: absolute;
+    /* set heigher z index*/
+    z-index: 1050;
+    /* set size*/
+    width: 50px;
+    height: 50px;
+}
+header>span>div
+{
+    /* Make Logo Fade-In */
+    animation-name: Hamburger;
+    animation-duration: 4s;
+    /* set background color */
+    background: rgba(34, 141, 0,255);
+    /* make all properties change over time */
+    transition: all 0.5s;
+    /* add border radius */
+    border-radius: 3px;
+    /* add bottom margin */
+    margin-bottom: 5px;
+    /* display block */
+    display: block;
+    /* set size */
+    width: 33px;
+    height: 4px;
+}
+header>ul
+{
+    /* add margin */
+    margin: 25px 25px 0px 0px;
+    /* Display Flex */
+    display: flex;
+    /* set flex direction*/
+    flex-direction: row;
+    /* float right */
+    float: right;
+    /* remove list style */
+    list-style: none;
+}
+header>ul>li
+{
+    /* set width */
+    width: auto;
+}
+/* Nav add Spacers at the end*/
+header>ul>li:after
+{
+    /* add lines */
+    content: "|";
+    /*float right*/
+    float: right;
+    /* font properties */
+    font-size: 18px;
+    color: #ffffff;
+}
+/* Nav remove Spacer at the end*/
+header>ul>li:last-child:after
+{
+    content: "";
+}
+/* Nav Links */
+header>ul>li>a
+{
+    margin: 5px;
+    /* text detail */
+    -webkit-font-smoothing: antialiased;
+    margin: 0px 20px 0px 20px;
+    /* font properties */
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    /* render above */
+    z-index: 10000;
+}
+/* change font properties and nav */
+@media screen and (max-width: 1200px)
+{
+    header>ul>li:after
+    {
+        /* remove verticle lines between nav links*/
+        content: "";
+    }
+    header>ul>li>a
+    {
+        margin: 0px 5px 0px 5px !important;
+        font-size: 14px !important;
+    }
+}
+header>article
+{
+    /* set size */
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /* background gradient */
+    background: linear-gradient(140deg, rgba(0, 80, 105, 1) 0%, rgba(1, 145, 200, 0.75) 25%, rgba(34, 141, 0, 0.9) 50%, rgba(255, 179, 0, 0.85) 85%);
+}
+header>article>section
+{
+    /* add padding */
+    padding: 150px 25px 50px 25px;
+    text-align: center;
+}
+header>article>section>a
+{
+    /* set size */
+    width: auto;
+    height: auto;
+}
+/* Main properties */
+main
+{
+    /* set min height */
+    min-height: 75vh;
+}
+/*Hamburger Menu*/
+#Hamburger
+{
+    /* hide by standard */
+    display: none;
+    margin-top: 15px;
+    /*move left*/
+    transform: translateX(-25px);
+    width: 100%;
+    /* render above */
+    z-index: 3;
+}
+#Hamburger>div
+{
+    /* make all changes to properties take .5 sec*/
+    transition: all 0.5s;
+}
+
+#Hamburger>ul
+{
+    /* render above */
+    z-index: 3;
+    padding: 0px;
+    /* set size */
+    width: 100%;
+    /* set background color */
+    background-color: rgba(0,0,0,0.75);
+}
+#Hamburger>ul>li>a
+{
+    /* padding */
+    padding-left: 10px;
+    /* font properties */
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+}

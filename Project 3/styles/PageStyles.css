@@ -1,0 +1,179 @@
+/*Autheur:         Ties de Bruijn*/
+/*Aanmaakdatum:   <02-23-2024>*/
+
+/*<Namaak van de Veba-solar site> */
+
+#Home>header
+{
+    /* add bakcground immage */
+    background-image: url(../images/headertje.png);
+    /* set mmin height */
+    min-height: 750px;
+}
+#Home>header>article>section>a>img
+{
+    /* sizing */
+    width: 225px;
+    height: auto;
+}
+#Home>header>article>section>h2
+{
+    /* positioning */
+    margin-top: 50px;
+    /* font properties */
+    color: #FFFFFF;
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    line-height: 45px;
+
+}
+#Home>header>article>section>h2>strong {
+    /* font properties */
+    font-weight: bold;
+}
+#ZonneCheck>main>article>section
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    /* set sizing */
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+}
+#ZonneCheck
+{
+    background:  linear-gradient( rgba(0, 80, 105, 1) 0%, rgba(1, 145, 200, 0.75) 25%, rgba(34, 141, 0, 0.9) 50%, rgba(255, 179, 0, 0.85) 85%, rgba(0, 80, 105, 1) 100%);
+    background-repeat: repeat;
+    /* set width */
+    width: 100vw;
+}
+
+#ZonneCheck>header
+{
+    /* set min height */
+    min-height: initial !important;
+}
+#ZonneCheck>main>article>form
+{
+    /* Positioning */
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.14);
+    width: 75%;
+    /* font properties */
+    text-align: center;
+    position: relative;
+    left: 12.5%;
+}
+#ZonneCheck>main>article>h1
+{
+    /* center text */
+    text-align: center;
+}
+
+/*Footer*/
+footer
+{
+    /* font properties */
+    background-color: white; /* Stelt de achtergrondkleur van de footer in op wit */
+}
+footer img
+{
+    /* sizing */
+    height: auto; /* Staat automatische hoogteaanpassing van afbeeldingen toe */
+    max-width: 150px; /* Stelt de maximale breedte van de afbeelding in op 150 pixels */
+    margin-top: 100px; /* Stelt de bovenmarge van de afbeelding in op 100 pixels */
+}
+.deel1
+{
+    /* sizing */
+    width: 33.3%; /* Stelt de breedte van deze sectie in op 33,3% van de container */
+    margin-left: 100px; /* Stelt de linker marge van deze sectie in op 100 pixels */
+    float: left; /* Laat deze sectie naar links zweven */
+}
+footer strong
+{
+    font-weight: bold;  /* Maakt de tekst vetgedrukt */
+}
+a
+{
+    text-decoration: none; /* Verwijdert onderstreping van links */
+    font-weight: 400; /* Stelt het lettertype van links in op 400 */
+    color: #228D00; /* Stelt de kleur van links in op een tint groen */
+}
+footer>article
+{
+    line-height: 30px; /* Stelt de regelhoogte van artikelen in op 30 pixels */
+}
+.deel2 p
+{
+    padding-top: 100px; /* Stelt de bovenvulling van alinea's in deze sectie in op 100 pixels */
+}
+
+.deel2 .inputinschrijven
+{
+    border: solid 1px #d1d1d1; /* Stelt randeigenschappen in voor het invoerveld */
+    font-size: 18px; /* Stelt de lettergrootte van het invoerveld in op 18 pixels */
+    height: 65px; /* Stelt de hoogte van het invoerveld in op 65 pixels */
+    padding-right: 430px; /* Stelt de rechtervulling van het invoerveld in op 430 pixels */
+}
+input
+{
+    margin: 8px 0 8px 0px;
+    clear: both;
+}
+.input4
+{
+    font-size: 18px;
+}
+.knop
+{
+    margin-left: 550px;
+}
+.button
+{
+    font-size: 17px; /* Stelt de lettergrootte van de knop in op 17 pixels */
+    display: inline-block; /* Maakt de knop weer te geven als een inline blok */
+    color: #ffffff; /* Stelt de tekstkleur van de knop in op wit */
+    text-decoration: none; /* Verwijdert onderstreping van knoptekst */
+    padding: 18px 30px 18px 30px; /* Stelt de vulling voor de knop in */
+    border: 1px #ffffff solid; /* Stelt randeigenschappen voor de knop in */
+    transition: all 0.5s; /* Voegt overgangseffecten toe voor alle eigenschappen gedurende 0,5 seconden */
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    font-weight: 300; /* Stelt het lettertype van de knop in op 300 */
+    background: linear-gradient(90deg, rgba(225,179,0,1) 0%, rgba(34,141,0,1) 60%); /* Stelt een lineaire gradiëntachtergrond voor de knop in */
+    -moz-border-radius: 50px; /* Voegt randradius toe voor Mozilla Firefox */
+    -webkit-border-radius: 50px; /* Voegt randradius toe voor Webkit-browsers */
+    border-radius: 50px; /* Voegt randradius toe */
+    margin-left: 550px; /* Stelt de linker marge van de knop in op 550 pixels */
+}
+.introductie
+{
+    font-size: 15px;
+}
+.datumtijd
+{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    margin: 5px;
+}
+article
+{
+    /* set width */
+    width: 100%;
+}
+article>p
+{
+    /* center text */
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
