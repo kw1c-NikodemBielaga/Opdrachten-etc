@@ -1,0 +1,409 @@
+/*
+ * User: N.Bielaga
+ * Date: 6.06.2024
+ * File: Praktijkopdracht4
+ */
+@font-face
+{
+    font-family: "Oswald"; /*  lettertype Montserrat gemaakt */
+    src: url("../fonts/Oswald-Bold.ttf");
+}
+@font-face
+{
+    font-family: "Sintony"; /*  lettertype Montserrat gemaakt */
+    src: url("../fonts/Sintony-Regular.ttf");
+}
+body
+{
+    margin: 0;
+    font-family: "Sintony";
+}
+header
+{
+    background-color: #0085ca;
+    height: 190px;
+}
+header .navwrapper .logo svg
+{
+    fill: #fff;
+    height: 140px;
+}
+header .navwrapper .logo
+{
+    text-align: center;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    align-items: center;
+}
+
+nav ul
+{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li
+{
+    margin-left: 200px;
+    position: absolute;
+    top: 50px;
+    left: 12px;
+}
+.nav-item
+{
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: "Oswald";
+}
+nav ul li:nth-child(2)
+{
+    left: 116px;
+}
+
+nav ul li:nth-child(3)
+{
+    left: 220px;
+}
+
+nav ul li:nth-child(4)
+{
+    left: 354px;
+}
+nav ul li:nth-child(5)
+{
+    left: 520px;
+}
+.btn.btn-red
+{
+    background: #ED302F;
+    color: #fff;
+    border: 1px solid #ED302F;
+    position: absolute;
+    right: 48px; /* Odległość od prawej krawędzi */
+    top: 40px; /* Odległość od górnej krawędzi */
+}
+
+.btn, .inlogknopje
+{
+    display: inline-flex;
+    height: 49px;
+    font-weight: 600;
+    padding: 0 30px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    text-decoration: none;
+}
+.inlogknopje
+{
+    background: #ED302F;
+    color: #fff;
+    border: 1px solid #ED302F;
+    position: absolute;
+    right: 200px;
+    top: 40px;
+    padding: 0 38px;
+}
+footer h5
+{
+    color: #0085ca;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-family: "Oswald";
+}
+footer a.telephone svg
+{
+    height: 24px;
+    fill: #0085ca;
+    margin: 0 10px 0 0;
+
+}
+footer a.telephone
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    color: #0085ca;
+}
+footer .small, footer small
+{
+    font-size: .875rem;
+    color: #0085ca;
+    font-weight: 600;
+}
+.btn.btn-blue
+{
+    background-color: #0085ca;
+    color: #fff;
+    border: 1px solid #0085ca;
+    padding: 0 70px;
+    margin-top: 18px;
+}
+.locatie
+{
+    background: 0 0;
+    border: 1px solid rgba(14, 133, 199, .5);
+    color: #0085ca;
+    padding: 0 58px;
+    display: inline-flex;
+    height: 49px;
+    font-weight: 600;
+    padding: 0 55px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    text-decoration: none;
+    margin-top: 15px;
+}
+a.locatie:hover
+{
+    background-color: #0085ca;
+    color: #fff;
+}
+.text-lg-start
+{
+    margin-left: 100px;
+}
+/*deel2*/
+footer .logo
+{
+    fill: #0085ca;
+    height: 115px;
+}
+.channels .channel
+{
+    height: 42px;
+    width: 42px;
+    display: inline-flex;
+    background: #0085ca;
+    justify-content: center;
+    margin: 0 3px;
+    transition: all 250ms ease;
+    border-radius: 50%;
+}
+.channels .channel svg
+{
+    fill: #fff;
+    height: 20px;
+    align-self: center;
+    transition: all 250ms ease;
+}
+.copyright
+{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+.deel2
+{
+    text-align: center;
+}
+
+.deel2 .logo
+{
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+img
+{
+    height: 550px;
+}
+.channels
+{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+
+/* Styl ogólny dla kontenera obrazów */
+.image-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #545350;
+    text-transform: uppercase;
+    font-family: "Oswald";
+}
+
+/* Styl dla wewnętrznego kontenera */
+.image-container > div {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styl dla nagłówka */
+.image-container h1 {
+    color: #0085ca;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styl dla pól wejściowych */
+.image-container input[type="text"],
+.image-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Styl dla przycisku logowania */
+.image-container .botom {
+    background-color: #0085ca;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s;
+}
+
+.image-container .botom:hover
+{
+    background-color: #ED302F;
+}
+.image-container a
+{
+    color: #ED302F;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.activity-search {
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.activity-table {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #0085ca;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .nav-item
+    {
+        font-size: 10px;
+    }
+
+    header .navwrapper .logo
+    {
+        width: 150px; /* Aangepaste breedte voor het logo */
+    }
+    .btn, .inlogknopje, .locatie
+    {
+        padding: 0 20px; /* Aangepaste padding voor de knoppen */
+    }
+    footer .logo
+    {
+        height: 100px; /* Aangepaste hoogte voor het logo in de footer */
+    }
+    img {
+        max-width: 100%; /* Zorg ervoor dat afbeeldingen niet breder worden dan de viewport */
+        height: auto; /* Behoud de verhoudingen van de afbeeldingen */
+    }
+}
+@media screen and (max-width: 850px)
+{
+    nav ul
+    {
+        flex-direction: column; /* Maak navigatie-items verticaal gestapeld */
+        display: none;
+    }
+    footer h5
+    {
+        font-size: 1em; /* Verklein de lettergrootte van de kop in de footer */
+    }
+    footer .logo
+    {
+        height: 80px; /* Verklein het logo in de footer verder */
+    }
+    footer a.telephone
+    {
+        font-size: 1.2rem; /* Verklein de lettergrootte van de telefoonlink in de footer */
+    }
+    img
+    {
+        max-width: 100%; /* Zorg ervoor dat afbeeldingen niet breder worden dan de viewport */
+        height: auto; /* Behoud de verhoudingen van de afbeeldingen */
+    }
+}
