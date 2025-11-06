@@ -1,0 +1,509 @@
+/*
+Auteurs:        Nikodem Bielaga   
+Aanmaakdatum:   10.01.2024
+
+Onderwerp:      Praktijk project
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+@font-face
+{
+    font-family: "Open-Sans";
+    src: url(../fonts/Open-Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face 
+{
+    font-family: "Anton";
+    src: url(../fonts/Anton/Anton-Regular.ttf);
+}
+/* Styling for the first header (.header) */
+/* Styling voor de eerste kop (.header) */
+.header 
+{
+    background-image: url(../images/Windows-11-tapeta-wallpaper-3.jpg); /* Achtergrondafbeelding URL */
+    height: 100vh; /* Volledige hoogte van het scherm */
+    background-size: cover; /* Zorg ervoor dat de achtergrondafbeelding het hele element bedekt */
+    background-position: center; /* Centreer de achtergrondafbeelding binnen het element */
+}
+
+
+/* Stijl voor de tweede header (.header1) */
+.header1 
+{
+    background-color: #EDBC73; /* Achtergrondkleur voor de tweede header */
+    height: 100vh; /* Volledige hoogte van het scherm */
+    background-size: cover; /* Zorg ervoor dat de achtergrondkleur het hele element bedekt */
+    background-position: center; /* Centreer de achtergrondkleur binnen het element */
+}
+
+/* Header 2 Stijlen */
+.header2 
+{
+    background-color: #EDBC73; /* Stel de achtergrondkleur in op lichtgeel */
+    height: 100vh; /* Stel de hoogte in op 100% van de schermhoogte */
+    background-size: cover; /* Zorg ervoor dat de achtergrondafbeelding het hele container bedekt */
+    background-position: center; /* Centreer de achtergrondafbeelding */
+}
+
+/* Header 3 Stijlen */
+.header3 
+{
+    background-color: #EDBC73; /* Stel de achtergrondkleur in op lichtgeel */
+    height: 100vh; /* Stel de hoogte in op 100% van de schermhoogte */
+    background-size: cover; /* Zorg ervoor dat de achtergrondafbeelding het hele container bedekt */
+    background-position: center; /* Centreer de achtergrondafbeelding */
+}
+
+/* Header 4 Stijlen */
+.header4 
+{
+    background-color: #EDBC73; /* Stel de achtergrondkleur in op lichtgeel */
+    height: 100vh; /* Stel de hoogte in op 100% van de schermhoogte */
+    background-size: cover; /* Zorg ervoor dat de achtergrondafbeelding het hele container bedekt */
+    background-position: center; /* Centreer de achtergrondafbeelding */
+}
+
+/* Navigatiestijlen */
+nav 
+{
+    display: flex; /* Gebruik flexbox voor de layout */
+    align-items: center; /* Centreer items verticaal */
+    justify-content: space-between; /* Verdeel ruimte tussen items */
+    padding-top: 15px; /* Voeg padding toe aan de bovenkant */
+    padding-left: 8%; /* Voeg padding toe aan de linkerkant */
+    padding-right: 8%; /* Voeg padding toe aan de rechterkant */
+    font-family: "Anton"; /* Stel het lettertype in */
+}
+
+/* Stijlen voor navigatielijstitems */
+nav ul li 
+{
+    display: inline-block; /* Toon lijstitems horizontaal */
+    list-style-type: none; /* Verwijder opsommingstekens van lijstitems */
+    padding: 10px 25px; /* Voeg padding toe aan lijstitems */
+}
+
+/* Stijlen voor navigatielijstitems bij hover */
+.navlist a:hover 
+{
+    color: rgb(84, 234, 109); /* Verander tekstkleur bij hover */
+}
+
+/* Stijlen voor ankers (links) */
+a 
+{
+    color: black; /* Stel standaard linkkleur in op zwart */
+}
+
+/* Stijlen voor het logo */
+.logo 
+{
+    font-size: 25px; /* Stel de lettergrootte voor het logo in */
+    font-weight: bold; /* Stel de letterdikte voor het logo in */
+}
+
+/* Stijlen voor spans */
+span 
+{
+    color: rgb(66, 152, 201); /* Stel kleur in voor spans */
+}
+
+/* Stijlen voor het menu-icoon */
+#menu-icon 
+{
+    font-size: 35px; /* Stel lettergrootte voor het menu-icoon in */
+    cursor: pointer; /* Verander cursor naar een wijzer bij hover */
+    display: block; /* Toon als een block-element */
+}
+
+/* Stijlen voor headerinformatie */
+.header-info 
+{
+    position: absolute; /* Zet positie op absoluut */
+    top: 40%; /* Afstand vanaf de bovenkant van het oudercontainer */
+    left: 8%; /* Afstand vanaf de linkerkant van het oudercontainer */
+    font-size: 30px; /* Stel lettergrootte in */
+    color: rgb(21, 182, 48); /* Stel tekstkleur in */
+}
+
+/* Stijlen voor kop van headerinformatie */
+.header-info h1 
+{
+    font-size: 60px; /* Stel lettergrootte in voor de kop */
+    margin-top: 20px; /* Stel bovenmarge in voor de kop */
+}
+
+/* Stijlen voor Afbeelding 1 */
+.foto1 
+{
+    float: right; /* Zet de afbeelding naar rechts */
+    margin-right: 130px; /* Stel de rechtermarge in voor de afbeelding */
+    height: 300px; /* Stel hoogte in voor de afbeelding */
+    width: 350px; /* Stel breedte in voor de afbeelding */
+    margin-top: 180px; /* Stel bovenmarge in voor de afbeelding */
+}
+
+/* Stijlen voor Afbeelding 2 in #selection2 */
+#selection2 img 
+{
+    height: 500px; /* Stel hoogte in voor de afbeelding in selection2 */
+    width: 300px; /* Stel breedte in voor de afbeelding in selection2 */
+    margin-left: 50px; /* Stel linkermarge in voor de afbeelding in selection2 */
+}
+
+/* Stijlen voor de tekst 'Over' */
+.about-text 
+{
+    width: 500px; /* Stel breedte in voor de tekstcontainer */
+    justify-content: space-around; /* Centreer de inhoud met ruimte eromheen */
+    float: right; /* Zet de tekstcontainer naar rechts */
+    margin-right: 650px; /* Stel de rechtermarge in voor de tekstcontainer */
+    margin-top: 15px; /* Stel bovenmarge in voor de tekstcontainer */
+    font-family: "Open-Sans"; /* Stel het lettertype in voor de tekst */
+    font-size: 14px; /* Stel lettergrootte in voor de tekst */
+}
+
+/* Stijlen voor #selection2 */
+#selection2 
+{
+    background-color: #EDBC73; /* Stel achtergrondkleur in voor selection2 */
+    min-height: 500px; /* Stel minimale hoogte in voor selection2 */
+}
+
+/* Stijlen voor de footer */
+footer 
+{
+    font-family: Verdana; /* Stel lettertype in voor de tekst in de footer */
+    color: black; /* Stel tekstkleur in voor de footer */
+    text-align: center; /* Centreer de tekst in de footer */
+    height: 5vh; /* Stel hoogte van de footer in als een percentage van de schermhoogte */
+}
+
+/* Stijlen voor het container van sociale iconen */
+.icons 
+{
+    display: flex; /* Gebruik flexbox voor de layout */
+    justify-content: center; /* Centreer de iconen horizontaal */
+}
+
+.icons a 
+{
+    text-decoration: none; /* Verwijder onderstreping van links */
+    background-color: white; /* Stel achtergrondkleur in voor pictogrammen */
+    padding: 10px; /* Voeg padding toe aan pictogrammen */
+    margin: 10px; /* Voeg marge toe aan pictogrammen */
+    border-radius: 50%; /* Maak pictogrammen rond */
+}
+
+/* Stijlen voor hover-effect op sociale pictogrammen */
+.icons a:hover 
+{
+    background-color: black; /* Verander achtergrondkleur bij hover */
+    transition: 0.5s; /* Voeg overgangseffect toe */
+}
+
+/* Kleurverandering van pictogram bij hover */
+.icons a:hover i 
+{
+    color: white; /* Verander pictogramkleur bij hover */
+    transition: 0.5s; /* Voeg overgangseffect toe */
+}
+
+/* Stijlen voor afbeeldingen in portfolio box */
+.portfolio-box img 
+{
+    height: 280px; /* Stel hoogte in voor afbeeldingen in portfolio box */
+    transition: 0.5s ease; /* Voeg overgangseffect toe */
+}
+
+/* Hover-effect voor portfolio box */
+.portfolio-box:hover img 
+{
+    transform: scale(1.1); /* Vergroot de afbeelding bij hover */
+}
+
+/* Stijlen voor portfoliocontainer */
+.portfolio-container 
+{
+    display: grid; /* Gebruik grid voor lay-out */
+    grid-template-columns: repeat(3, 1fr); /* Creëer 3 kolommen met gelijke breedte */
+    align-items: center; /* Centreer items verticaal */
+    gap: 2.5em; /* Stel ruimte in tussen grid-items */
+}
+
+/* Individuele stijlen voor portfoliobox */
+.portfolio-container .portfolio-box 
+{
+    position: relative; /* Zet de positie op relatief voor het plaatsen van kindelementen */
+    border-radius: 2rem; /* Stel de border-radius in voor afgeronde hoeken */
+    box-shadow: 0 0 1rem; /* Voeg box-shadow toe voor diepte */
+    overflow: hidden; /* Verberg overflow-inhoud */
+    display: flex; /* Gebruik flexbox voor lay-out */
+}
+
+/* Stijlen voor afbeeldingen in portfoliobox */
+.portfolio-box img 
+{
+    width: 100%; /* Maak de afbeelding 100% breedte van de container */
+}
+
+/* Stijlen voor portfoliolaag */
+.portfolio-box .portfolio-layer 
+{
+    position: absolute; /* Zet de positie op absoluut voor overlappen */
+    width: 100%; /* Maak de laag 100% breedte van de container */
+    height: 100%; /* Maak de laag 100% hoogte van de container */
+    background: linear-gradient(rgba(0,0,0.1), #4298C9); /* Breng een gradiëntachtergrond aan */
+    transform: translateY(100%); /* Verplaats de laag oorspronkelijk naar beneden */
+    transition: 0.5s ease; /* Voeg overgangseffect toe */
+    text-align: center; /* Centreer de tekst binnen de laag */
+}
+
+/* Hover-effect voor portfolioboxlaag */
+.portfolio-box:hover .portfolio-layer 
+{
+    transform: translateY(0); /* Verplaats de laag omhoog bij hover */
+}
+
+/* Stijlen voor koppen */
+h3 
+{
+    font-size: 30px; /* Stel de lettergrootte in voor koppen */
+    text-align: center; /* Centreer de koppen */
+}
+.omschrijving
+{
+    padding-left: 10px; /* Set left padding for descriptions */
+    color: white; /* Set text color for descriptions */
+    font-size: 13px; /* Set font size for descriptions */
+    font-family: "Open-Sans"; /* Set font family for descriptions */
+    text-align: center; /* Center align the descriptions */
+}
+
+.omschrijving1
+{
+    padding-left: 10px; /* Set left padding for descriptions */
+    color: white; /* Set text color for descriptions */
+    font-size: 12px; /* Set font size for descriptions */
+    font-family: "Open-Sans"; /* Set font family for descriptions */
+    text-align: center; /* Center align the descriptions */
+}
+.omschrijving2
+{
+    padding-left: 10px; /* Set left padding for descriptions */
+    color: white; /* Set text color for descriptions */
+    font-size: 13px; /* Set font size for descriptions */
+    font-family: "Open-Sans"; /* Set font family for descriptions */
+    text-align: center; /* Center align the descriptions */
+}
+.omschrijving3
+{
+    padding-left: 10px; /* Set left padding for descriptions */
+    color: white; /* Set text color for descriptions */
+    font-size: 11px; /* Set font size for descriptions */
+    padding-top: 11px;
+    font-family: "Open-Sans"; /* Set font family for descriptions */
+    text-align: center; /* Center align the descriptions */
+}
+.omschrijving4
+{
+    padding-left: 10px; /* Set left padding for descriptions */
+    color: white; /* Set text color for descriptions */
+    font-size: 13px; /* Set font size for descriptions */
+    font-family: "Open-Sans"; /* Set font family for descriptions */
+    text-align: center; /* Center align the descriptions */
+}
+/* Stijlen voor titels */
+.title1 
+{
+    padding-left: 10px; /* Stel de linkermarge in voor titels */
+    color: white; /* Stel de tekstkleur in voor titels */
+    font-size: 17px; /* Stel de lettergrootte in voor titels */
+    font-weight: bolder; /* Stel het lettergewicht in voor titels */
+}
+
+/* Stijlen voor gegevens en afbeeldingen in tabel */
+.td, img 
+{
+    height: 120px; /* Stel de hoogte in voor tabelgegevens en afbeeldingen */
+    float: left; /* Zet elementen naar links */
+}
+
+/* Stijlen voor tabel */
+table, th, td 
+{
+    border: 1px solid black; /* Stel een 1px zwarte rand in voor tabel, tabelkop en tabelgegevens */
+}
+
+/* Onderstreepstijl voor School1 */
+.school1 
+{
+    text-decoration: underline; /* Onderstreep de tekst */
+}
+
+/* Cursieve tekststijl */
+.tekst1 
+{
+    font-style: italic; /* Stel tekst in cursief in */
+    font-family: "Open-Sans"; /* Stel het lettertype in voor cursieve tekst */
+    font-size: 13px; /* Stel de lettergrootte in voor cursieve tekst */
+}
+
+/* Stijlen voor Titel2 */
+.title2 
+{
+    padding-left: 10px; /* Stel de linkermarge in voor Titel2 */
+    color: white; /* Stel de tekstkleur in voor Titel2 */
+    font-size: 20px; /* Stel de lettergrootte in voor Titel2 */
+    font-weight: bold; /* Stel het lettergewicht in voor Titel2 */
+    margin-top: 130px; /* Stel de bovenmarge in voor Titel2 */
+}
+
+
+@media only screen and (max-width: 1350px) 
+{
+
+    .navlist a 
+    {
+        padding: 10px; /* Voeg wat ruimte toe tussen de menu-items */
+        display: block; /* Weergeven als blokelement om de volledige breedte te benutten */
+        color: black; /* Tekstkleur instellen op zwart */
+        text-align: center; /* Tekst centreren binnen de ankerelementen */
+    }
+    .header-info 
+    {
+        top: 30%; /* Pas de positie van de header-info aan voor betere weergave op kleinere schermen */
+        font-size: 20px; /* Stel de lettergrootte in op 20 pixels */
+    }
+
+    #selection2 img 
+    {
+        width: 100%; /* Zorg ervoor dat de afbeelding responsief is op kleinere schermen */
+        margin-left: 0; /* Verwijder de marge aan de linkerkant */
+    }
+
+    .about-text 
+    {
+        width: 100%; /* Maak de tekst volledige breedte op kleinere schermen */
+        margin-right: 0; /* Verwijder de marge aan de rechterkant */
+        padding: 15px; /* Voeg wat ruimte toe rond de tekst */
+        background-color: #EDBC73; /* Achtergrondkleur instellen op lichtgeel (#EDBC73) */
+    }
+    .navlist 
+    {
+        position: absolute; /* Absoluut gepositioneerd element */
+        top: 0; /* Afstand vanaf de bovenkant van het viewport instellen op 0 */
+        left: 0; /* Afstand vanaf de linkerkant van het viewport instellen op 0 */
+        width: 100%; /* Volledige breedte van het viewport benutten */
+        background-color: white; /* Achtergrondkleur instellen met lichte transparantie */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Voeg een subtiele schaduw toe voor diepte */
+        z-index: 1; /* Z-index instellen om ervoor te zorgen dat het menu boven andere elementen ligt */
+        transition: transform 0.3s ease;   /* Voeg een vloeiende overgang toe aan de transformatie met 0.3 seconden vertraging */
+    }
+    .navlist.open 
+    {
+        transform: translateY(0);  /* Verplaats het menu verticaal met 0, waardoor het wordt geopend */
+    } 
+
+    .navlist a 
+    {
+        padding: 6px;  /* Voeg wat ruimte toe binnen de ankerelementen */
+        display: block;  /* Weergeven als blokelement om de volledige breedte te benutten */
+        color: black;  /* Tekstkleur instellen op zwart */
+        text-align: center; /* Tekst centreren binnen de ankerelementen */
+    }
+}
+@media only screen and (max-width: 800px) 
+{
+    .header-info 
+    {
+        top: 30%; /* Pas de positie van de header-info aan naar 30% van het scherm */
+        font-size: 20px; /* Stel de lettergrootte in op 20 pixels */
+    }
+
+    .foto1 
+    {
+        float: none; /* Geen specifieke zweefstand (float) */
+        margin: 0 auto; /* Centreren op de horizontale as met automatische zijmarges */
+        height: auto; /* Automatische hoogte behouden */
+        width: 100%; /* Volledige breedte van de container benutten */
+        margin-top: 20px;  /* Aanpassen zoals nodig voor bovenmarge */
+    }
+
+    #selection2 img 
+    {
+        width: 100%;  /* Zorg ervoor dat de afbeelding responsief is op kleinere schermen */
+        margin-left: 0;   /* Verwijder de marge aan de linkerkant van de afbeelding */
+    }
+
+    .about-text 
+    {
+        width: 100%;   /* Maak de tekstcontainer volledige breedte op kleinere schermen */
+        margin-right: 0; /* Verwijder de marge aan de rechterkant van de tekstcontainer */
+        padding: 15px;   /* Voeg wat ruimte toe rond de tekst binnen de container */
+        background-color: #EDBC73;    /* Achtergrondkleur instellen op lichtgeel (#EDBC73) */
+        text-align: center; /* Tekst centreren binnen de container (aanpassen indien nodig) */
+    }
+
+    .portfolio-box img 
+    {
+        height: auto;   /* Automatische hoogte behouden voor portfolio-afbeeldingen */
+    }
+
+    .portfolio-container 
+    {
+        grid-template-columns: repeat(1, 1fr); /* Eén kolom op kleinere schermen */
+        gap: 1em; /* Ruimte tussen portfolio-items */
+    }
+    .navlist a 
+    {
+        padding: 10px;  /* Voeg wat ruimte toe binnen de ankerelementen */
+        display: block;  /* Weergeven als blokelement om de volledige breedte te benutten */
+        color: black;  /* Tekstkleur instellen op zwart */
+        text-align: center; /* Tekst centreren binnen de ankerelementen */
+    }
+
+    .bx-menu 
+    {
+        font-size: 35px;   /* Instellen van de lettergrootte van het menu-icoon */
+        display: block; /* Weergeven als blokelement */
+    } 
+    .navlist 
+    {
+        position: absolute; /* Absoluut gepositioneerd element */
+        top: 0; /* Afstand vanaf de bovenkant van het viewport instellen op 0 */
+        left: 0; /* Afstand vanaf de linkerkant van het viewport instellen op 0 */
+        width: 100%;  /* Volledige breedte van het viewport benutten */
+        background-color: rgba(66,31,12); /* Achtergrondkleur instellen met lichte transparantie */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Voeg een subtiele schaduw toe voor diepte */
+        z-index: 1; /* Z-index instellen om ervoor te zorgen dat het menu boven andere elementen ligt */
+        transition: transform 0.3s ease; /* Voeg een vloeiende overgang toe aan de transformatie met 0.3 seconden vertraging */
+    }
+    .navlist.open 
+    {
+        transform: translateY(0);  /* Verplaats het menu verticaal met 0, waardoor het wordt geopend */
+    }
+
+    .navlist a 
+    {
+        padding: 6px; /* Voeg wat ruimte toe binnen de ankerelementen */
+        display: block; /* Weergeven als blokelement om de volledige breedte te benutten */
+        color: black; /* Tekstkleur instellen op zwart */
+        text-align: center; /* Tekst centreren binnen de ankerelementen */
+    }
+    } 
+
+
+
+
+
+
+
+

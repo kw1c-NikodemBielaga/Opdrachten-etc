@@ -1,0 +1,556 @@
+/*
+	Nikodem Bielaga
+	06-02-2024
+	praktijkopdracht
+*/
+@font-face
+{
+    font-family: "Montserrat"; /*  lettertype Montserrat gemaakt */
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf); /* Eige lettertype toegevoegd*/
+}
+
+body
+{
+    margin: 0; /* Verwijder standaardmarge van de body */
+    background-image: url(../images/trainstation073-header-05.jpg); /* Achtergrondafbeelding voor de body instellen */
+    background-image: url(../images/trainstation073-header-06.jpg); /* achtergrondafbeelding */
+    background-image: url(../images/trainstation073-header-077.jpg); /* achtergrondafbeelding */
+    background-size: cover; /* Schaal achtergrondafbeeldingen om de hele container te bedekken */
+    background-repeat: no-repeat; /* Voorkom herhaling van achtergrondafbeeldingen */
+}
+
+#Navigatie
+{
+    background-color: rgba(45, 45, 45, 0.8); /* Achtergrondkleur van de navigatiebalk met transparantie */
+    height: 100px; /* Hoogte van de navigatiebalk */
+}
+
+/* Stijlen voor het logo */
+.Logo img
+{
+    height: 15vh; /* Hoogte van het logo instellen */
+    padding: 0 50px; /* Binnenste vulling van het logo instellen */
+    padding-top: 5px; /* Bovenste vulling van het logo aanpassen */
+}
+
+/* Stijlen voor iconen */
+i
+{
+    color: #ffffff; /* Kleur van iconen instellen */
+    display: inline-block; /* Iconen inline weergeven */
+    position: relative; /* Positie van iconen relatief ten opzichte van hun container */
+    bottom: 38px; /* Verticale positie aanpassen */
+    font-size: 12px; /* Lettergrootte van iconen */
+    right: 32px; /* Horizontale positie aanpassen */
+}
+span
+{
+    color: red; /* Tekstkleur rood */
+    position: relative; /* Plaatsing van het element relatief aan zijn oorspronkelijke positie */
+    bottom: 40px; /* Afstand vanaf de onderkant van het bovenliggende element */
+    right: 50px; /* Afstand vanaf de rechterkant van het bovenliggende element */
+    font-size: 10px; /* Tekengrootte van 10 pixels */
+}
+.show8
+{
+    position: relative; /* Plaatsing van het element relatief aan zijn oorspronkelijke positie */
+    justify-content: space-between; /* Verdeel de ruimte tussen de elementen langs de hoofdas */
+    padding: 10px; /* Ruimte rondom de inhoud van het element */
+    text-decoration: none; /* Geen decoratie toegepast op de tekst */
+    color: white; /* Tekstkleur wit */
+    bottom: 38px; /* Afstand vanaf de onderkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    font-size: 13px; /* Tekengrootte van 13 pixels */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    font-weight: 700; /* Vetgedrukte tekst */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    right: 35px;
+}
+.show9
+{
+
+    position: relative; /* Plaatsing van het element relatief aan zijn oorspronkelijke positie */
+    justify-content: space-between; /* Verdeel de ruimte tussen de elementen langs de hoofdas */
+    padding: 10px; /* Ruimte rondom de inhoud van het element */
+    text-decoration: none; /* Geen decoratie toegepast op de tekst */
+    color: white; /* Tekstkleur wit */
+    bottom: 38px; /* Afstand vanaf de onderkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    font-size: 13px; /* Tekengrootte van 13 pixels */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    font-weight: 700; /* Vetgedrukte tekst */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    right: 35px; /* Afstand vanaf de rechterkant van het bovenliggende element */
+}
+
+.show
+{
+    position: relative; /* Plaatsing van het element relatief aan zijn oorspronkelijke positie */
+    justify-content: space-between; /* Verdeel de ruimte tussen de elementen langs de hoofdas */
+    padding: 10px; /* Ruimte rondom de inhoud van het element */
+    text-decoration: none; /* Geen decoratie toegepast op de tekst */
+    color: white; /* Tekstkleur wit */
+    bottom: 38px; /* Afstand vanaf de onderkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    font-size: 13px; /* Tekengrootte van 13 pixels */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    font-weight: 700; /* Vetgedrukte tekst */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    right: 40px; /* Afstand vanaf de rechterkant van het bovenliggende element */
+}
+
+.options
+{
+    display: none; /* Verberg de opties in eerste instantie */
+    position: absolute; /* Plaatsing van het element ten opzichte van het eerste voorouderlijke element met position:relative */
+    background-color: #f9f9f9; /* Achtergrondkleur van de opties */
+    min-width: 200px; /* Minimale breedte van het element */
+    padding-left: 20px; /* Linker vulling van het element */
+    padding-top: 10px; /* Bovenste vulling van het element */
+    padding-bottom: 15px; /* Onderste vulling van het element */
+    left: 120px; /* Afstand vanaf de linkerkant van het bovenliggende element */
+    font-size: 11px; /* Tekengrootte van 11 pixels */
+    line-height: 18px; /* Hoogte van de regel van de tekst */
+    font-weight: 400; /* Normale tekstdikte */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    top: 100px; /* Afstand vanaf de bovenkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    border-radius: 1rem; /* Afgeronde hoeken van het element */
+}
+
+.options a
+{
+    color: black; /* Tekstkleur zwart */
+    padding: 8px 0; /* Binnenste vulling van de koppeling */
+    display: block; /* Zet de koppelingen om in blokken */
+    text-decoration: none; /* Geen decoratie toegepast op de koppelingen */
+}
+.options1
+{
+    display: none; /* Verberg de opties in eerste instantie */
+    position: absolute; /* Plaatsing van het element ten opzichte van het eerste voorouderlijke element met position:relative */
+    background-color: #f9f9f9; /* Achtergrondkleur van de opties */
+    min-width: 200px; /* Minimale breedte van het element */
+    padding-left: 20px; /* Linker vulling van het element */
+    padding-top: 10px; /* Bovenste vulling van het element */
+    padding-bottom: 15px; /* Onderste vulling van het element */
+    left: 130px; /* Afstand vanaf de linkerkant van het bovenliggende element */
+    font-size: 11px; /* Tekengrootte van 11 pixels */
+    line-height: 18px; /* Hoogte van de regel van de tekst */
+    font-weight: 400; /* Normale tekstdikte */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    top: 100px; /* Afstand vanaf de bovenkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    border-radius: 1rem; /* Afgeronde hoeken van het element */
+    margin-left: 120px; /* Linkermarge van het element */
+}
+.options1 a
+{
+    color: black; /* Tekstkleur van de koppelingen */
+    padding: 8px 0; /* Binnenste vulling van de koppeling */
+    display: block; /* Zet de koppelingen om in blokken */
+    text-decoration: none; /* Geen decoratie toegepast op de koppelingen */
+}
+.show1
+{
+    position: relative; /* Plaatsing van het element relatief aan zijn oorspronkelijke positie */
+    justify-content: space-between; /* Verdeel de ruimte tussen de elementen langs de hoofdas */
+    padding: 10px; /* Ruimte rondom de inhoud van het element */
+    text-decoration: none; /* Geen decoratie toegepast op de tekst */
+    color: white; /* Tekstkleur wit */
+    bottom: 38px; /* Afstand vanaf de onderkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    font-size: 13px; /* Tekengrootte van 13 pixels */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    font-weight: 700; /* Vetgedrukte tekst */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    right: 45px; /* Afstand vanaf de rechterkant van het bovenliggende element */
+}
+.options2
+{
+    display: none; /* Verberg de opties in eerste instantie */
+    position: absolute; /* Plaatsing van het element ten opzichte van het eerste voorouderlijke element met position:relative */
+    background-color: #f9f9f9; /* Achtergrondkleur van de opties */
+    min-width: 200px; /* Minimale breedte van het element */
+    padding-left: 20px; /* Linker vulling van het element */
+    padding-top: 10px; /* Bovenste vulling van het element */
+    padding-bottom: 15px; /* Onderste vulling van het element */
+    left: 120px; /* Afstand vanaf de linkerkant van het bovenliggende element */
+    font-size: 11px; /* Tekengrootte van 11 pixels */
+    line-height: 18px; /* Hoogte van de regel van de tekst */
+    font-weight: 400; /* Normale tekstdikte */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    top: 100px; /* Afstand vanaf de bovenkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    border-radius: 1rem; /* Afgeronde hoeken van het element */
+    margin-left: 310px; /* Buitenmarge van het element aan de linkerkant */
+}
+
+.options2 a
+{
+    color: black; /* Tekstkleur zwart */
+    padding: 8px 0; /* Binnenste vulling van de koppeling */
+    display: block; /* Zet de koppelingen om in blokken */
+    text-decoration: none; /* Geen decoratie toegepast op de koppelingen */
+}
+
+.show2
+{
+    position: relative; /* Plaatsing van het element relatief aan zijn oorspronkelijke positie */
+    justify-content: space-between; /* Verdeel de ruimte tussen de elementen langs de hoofdas */
+    padding: 10px; /* Ruimte rondom de inhoud van het element */
+    text-decoration: none; /* Geen decoratie toegepast op de tekst */
+    color: white; /* Tekstkleur wit */
+    bottom: 38px; /* Afstand vanaf de onderkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    font-size: 13px; /* Tekengrootte van 13 pixels */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    font-weight: 700; /* Vetgedrukte tekst */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    right: 40px; /* Afstand vanaf de rechterkant van het bovenliggende element */
+}
+.options3
+{
+    display: none; /* Verberg de opties in eerste instantie */
+    position: absolute; /* Plaatsing van het element ten opzichte van het eerste voorouderlijke element met position:relative */
+    background-color: #f9f9f9; /* Achtergrondkleur van de opties */
+    min-width: 200px; /* Minimale breedte van het element */
+    padding-left: 20px; /* Linker vulling van het element */
+    padding-top: 10px; /* Bovenste vulling van het element */
+    padding-bottom: 15px; /* Onderste vulling van het element */
+    left: 120px; /* Afstand vanaf de linkerkant van het bovenliggende element */
+    font-size: 11px; /* Tekengrootte van 11 pixels */
+    line-height: 18px; /* Hoogte van de regel van de tekst */
+    font-weight: 400; /* Normale tekstdikte */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    top: 100px; /* Afstand vanaf de bovenkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    border-radius: 1rem; /* Afgeronde hoeken van het element */
+    margin-left: 410px; /* Afstand vanaf de rechterkant van het bovenliggende element */
+}
+.options3 a
+{
+    color: black; /* Tekstkleur zwart */
+    padding: 8px 0; /* Binnenste vulling van de koppeling */
+    display: block; /* Zet de koppelingen om in blokken */
+    text-decoration: none; /* Geen decoratie toegepast op de koppelingen */
+}
+.show3
+{
+    position: relative; /* Plaatsing van het element relatief aan zijn oorspronkelijke positie */
+    justify-content: space-between; /* Verdeel de ruimte tussen de elementen langs de hoofdas */
+    padding: 10px; /* Ruimte rondom de inhoud van het element */
+    text-decoration: none; /* Geen decoratie toegepast op de tekst */
+    color: white; /* Tekstkleur wit */
+    bottom: 38px; /* Afstand vanaf de onderkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    font-size: 13px; /* Tekengrootte van 13 pixels */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    font-weight: 700; /* Vetgedrukte tekst */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    right: 40px;  /* Afstand vanaf de rechterkant van het bovenliggende element */
+}
+.options4
+{
+    display: none; /* Verberg de opties in eerste instantie */
+    position: absolute; /* Plaatsing van het element ten opzichte van het eerste voorouderlijke element met position:relative */
+    background-color: #f9f9f9; /* Achtergrondkleur van de opties */
+    min-width: 200px; /* Minimale breedte van het element */
+    padding-left: 20px; /* Linker vulling van het element */
+    padding-top: 10px; /* Bovenste vulling van het element */
+    padding-bottom: 15px; /* Onderste vulling van het element */
+    left: 120px; /* Afstand vanaf de linkerkant van het bovenliggende element */
+    font-size: 11px; /* Tekengrootte van 11 pixels */
+    line-height: 18px; /* Hoogte van de regel van de tekst */
+    font-weight: 400; /* Normale tekstdikte */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    top: 100px; /* Afstand vanaf de bovenkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    border-radius: 1rem; /* Afgeronde hoeken van het element */
+    margin-left: 580px; /* Buitenmarge van het element aan de linkerkant */
+}
+.options4 a
+{
+    color: black; /* Tekstkleur zwart */
+    padding: 8px 0; /* Binnenste vulling van de koppeling */
+    display: block; /* Zet de koppelingen om in blokken */
+    text-decoration: none; /* Geen decoratie toegepast op de koppelingen */
+}
+.show4
+{
+    position: relative; /* Plaatsing van het element relatief aan zijn oorspronkelijke positie */
+    justify-content: space-between; /* Verdeel de ruimte tussen de elementen langs de hoofdas */
+    padding: 10px; /* Ruimte rondom de inhoud van het element */
+    text-decoration: none; /* Geen decoratie toegepast op de tekst */
+    color: white; /* Tekstkleur wit */
+    bottom: 38px; /* Afstand vanaf de onderkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    font-size: 13px; /* Tekengrootte van 13 pixels */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    font-weight: 700; /* Vetgedrukte tekst */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    right: 30px; /* Afstand vanaf de rechterkant van het bovenliggende element */
+}
+.show5
+{
+    position: relative; /* Plaatsing van het element relatief aan zijn oorspronkelijke positie */
+    justify-content: space-between; /* Verdeel de ruimte tussen de elementen langs de hoofdas */
+    padding: 10px; /* Ruimte rondom de inhoud van het element */
+    text-decoration: none; /* Geen decoratie toegepast op de tekst */
+    color: white; /* Tekstkleur wit */
+    bottom: 38px; /* Afstand vanaf de onderkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    font-size: 13px; /* Tekengrootte van 13 pixels */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    font-weight: 700; /* Vetgedrukte tekst */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    right: 35px; /* Afstand vanaf de rechterkant van het bovenliggende element */
+}
+
+.show6
+{
+    position: relative; /* Plaatsing van het element relatief aan zijn oorspronkelijke positie */
+    justify-content: space-between; /* Verdeel de ruimte tussen de elementen langs de hoofdas */
+    padding: 10px; /* Ruimte rondom de inhoud van het element */
+    text-decoration: none; /* Geen decoratie toegepast op de tekst */
+    color: white; /* Tekstkleur wit */
+    bottom: 38px; /* Afstand vanaf de onderkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    font-size: 13px; /* Tekengrootte van 13 pixels */
+    text-transform: uppercase; /* Zet de tekst in hoofdletters om */
+    font-weight: 700; /* Vetgedrukte tekst */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    right: 25px; /* Afstand vanaf de rechterkant van het bovenliggende element */
+}
+
+.show7
+{
+    /* Stijlen voor een element met de klasse .show7 */
+    position: absolute; /* Plaatsing van het element ten opzichte van het eerste voorouderlijke element met position:relative */
+    justify-content: space-between; /* Verdeel de ruimte tussen de elementen langs de hoofdas */
+    padding: 10px; /* Ruimte rondom de inhoud van het element */
+    text-decoration: none; /* Geen decoratie toegepast op de tekst */
+    color: white; /* Tekstkleur wit */
+    float: right; /* Plaats het element aan de rechterkant van de pagina */
+    top: 30px; /* Afstand vanaf de bovenkant van het bovenliggende element */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    font-size: 13px; /* Tekengrootte van 13 pixels */
+    font-weight: 700; /* Vetgedrukte tekst */
+    letter-spacing: .1em; /* Afstand tussen de tekens */
+    left: 1230px; /* Afstand vanaf de linkerkant van het bovenliggende element */
+}
+
+/*Arrow instellen */
+.arrow
+{
+    position: absolute; /* De pijlknoppen worden absoluut gepositioneerd */
+    top: 350px; /* Afstand van bovenrand van de pagina */
+    cursor: pointer; /* Muisaanwijzer verandert in een handje bij aanwijzing */
+    border-radius: 50%; /* Ronde vorm voor de pijlknoppen */
+}
+
+/* Stijlen voor de afbeeldingen binnen de pijlknoppen */
+.arrow img
+{
+    width: 50px; /* Breedte van de afbeeldingen binnen de pijlknoppen */
+}
+
+/* Opmaak voor de hover-staat van de pijlknoppen */
+.arrow:hover
+{
+    background: rgba(0, 0, 0, .4); /* Semi-transparante achtergrondkleur bij aanwijzing */
+}
+.l
+{
+    left: 0; /* Links uitgelijnd */
+}
+.r
+{
+    right: 0; /* Rechts uitgelijnd */
+}
+.popuparrow
+{
+    cursor: pointer; /* Muisaanwijzer verandert in een handje bij aanwijzing */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparante achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    width: 40px; /* Breedte van de pijlknoppen */
+    height: 40px; /* Hoogte van de pijlknoppen */
+    position: fixed; /* Vastgezet op het scherm */
+    display: block; /* Weergave als blokelement */
+    top: 350px; /* Afstand van bovenrand van de pagina */
+    transform: translateY(-50%); /* Verticale uitlijning */
+    left: 20px; /* Afstand van de linkerzijde van het scherm */
+    font-size: 25px; /* grootte ingesteld */
+}
+.popuparrowl
+{
+    cursor: pointer; /* Muisaanwijzer verandert in een handje bij aanwijzing */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparante achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    width: 40px; /* Breedte van de pijlknoppen */
+    height: 40px; /* Hoogte van de pijlknoppen */
+    position: fixed; /* Vastgezet op het scherm */
+    display: block; /* Weergave als blokelement */
+    top: 350px; /* Afstand van bovenrand van de pagina */
+    transform: translateY(-50%); /* Verticale uitlijning */
+    right: 20px; /* Afstand van de rechterzijde van het scherm */
+    font-size: 25px; /* grootte igesteld */
+}
+h2, label, p
+{
+    color: black; /* Zwarte tekstkleur */
+}
+.calculator
+{
+    background-color: #fff; /* Witte achtergrondkleur */
+    border-radius: 8px; /* Afgeronde hoeken */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte-effect */
+    padding: 20px; /* Binnenmarge */
+    width: 360px; /* Breedte van de rekenmachine */
+    max-width: 100%; /* Maximale breedte */
+    margin: 0 auto; /* Horizontaal gecentreerd */
+}
+h2
+{
+    margin-top: 0; /* Geen bovenmarge */
+    text-align: center; /* Centreren van tekst */
+}
+
+/* Opmaak voor formulierelementen */
+form
+{
+    display: flex; /* Flexbox lay-out */
+    flex-direction: column; /* Verticale richting */
+}
+.gender-select
+{
+    display: flex; /* Flexbox lay-out */
+    align-items: center; /* Verticaal uitlijnen */
+    margin-bottom: 10px; /* Ondermarge */
+}
+.gender-select label
+{
+    margin-right: 10px; /* Rechtermarge */
+}
+input[type="number"]
+{
+    padding: 8px; /* Binnenmarge */
+    border-radius: 4px; /* Afgeronde hoeken */
+    border: 1px solid #ccc; /* Randstijl */
+    margin-bottom: 10px; /* Ondermarge */
+}
+input[type="radio"]
+{
+    margin-right: 5px; /* Rechtermarge */
+}
+input[type="submit"]
+{
+    padding: 10px 20px; /* Binnenmarge */
+    background-color: #007bff; /* Achtergrondkleur */
+    color: #fff; /* Tekstkleur */
+    border: none; /* Geen rand */
+    border-radius: 4px; /* Afgeronde hoeken */
+    cursor: pointer; /* Muisaanwijzer verandert in een handje */
+    transition: background-color 0.3s ease; /* Overgangseffect */
+}
+input[type="submit"]:hover
+{
+    background-color: #0056b3; /* Achtergrondkleur bij aanwijzing */
+}
+.resultaat
+{
+    text-align: center; /* Centreren van tekst */
+    font-size: 16px; /* Tekstgrootte */
+    color: white; /* Witte tekstkleur */
+}
+.banner
+{
+    width: 140px; /* Breedte van de banner */
+    height: 140px; /* Hoogte van de banner */
+    overflow: hidden; /* Overloop van inhoud verbergen */
+    position: relative; /* Relatieve positie */
+    float: right; /* Rechts uitlijnen */
+    top: 70px; /* Afstand van bovenrand van de pagina */
+    right: 70px; /* Afstand van rechterrand van de pagina */
+}
+.banner img
+{
+    width: 100%; /* Volledige breedte van 100% */
+    height: auto; /* Automatische hoogte */
+    position: absolute; /* Absoluut gepositioneerd */
+    transition: transform 0.5s; /* Overgangseffect voor transformatie */
+}
+.banner:hover img
+{
+    animation: rotateBanner 0.2s linear forwards; /* Draai de afbeelding 360 graden met lineaire timing */
+}
+@keyframes rotateBanner
+{
+    100%
+    {
+        transform: rotate(360deg); /* Draai de afbeelding 360 graden */
+    }
+}
+.banner img
+{
+    animation: rotateBackwards 0.2s linear forwards; /* Draai de afbeelding -360 graden met lineaire timing */
+}
+@keyframes rotateBackwards
+{
+    100%
+    {
+        transform: rotate(-360deg); /* Draai de afbeelding -360 graden */
+    }
+}
+.slide .caption
+{
+    text-align: center; /* Tekst uitlijnen in het midden */
+    color: white; /* Witte tekstkleur */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    font-weight: 600; /* Vetgedrukte tekst */
+    padding-top: 30px; /* Bovenmarge van 30 pixels */
+}
+.slide .caption1
+{
+    text-align: center; /* Tekst uitlijnen in het midden */
+    color: white; /* Witte tekstkleur */
+    font-size: 60px; /* Tekstgrootte */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+}
+.slide .caption2
+{
+    text-align: center; /* Tekst uitlijnen in het midden */
+    color: white; /* Witte tekstkleur */
+    font-size: 60px; /* Tekstgrootte */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+}
+.slide .caption3
+{
+    text-align: center; /* Tekst uitlijnen in het midden */
+    color: white; /* Witte tekstkleur */
+    font-size: 60px; /* Tekstgrootte */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+}
+.orangebuttom
+{
+    background-color: rgb(255, 94, 0); /* Oranje achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    padding: 18px 58px; /* Binnenmarge */
+    border: none; /* Geen rand */
+    border-radius: 25px; /* Afgeronde hoeken */
+    cursor: pointer; /* Muisaanwijzer verandert in een handje */
+    font-size: 14px; /* Tekstgrootte */
+    animation: slideInFromRight 0.5s ease forwards; /* Schuif naar rechts in met vloeiende timing */
+    margin-left: 560px; /* Linkermarge */
+    font-family: "Montserrat"; /* Gebruik Montserrat als lettertype */
+    font-weight: 600; /* Vetgedrukt */
+}
+.orangebuttom:hover
+{
+    background-color: rgb(243, 65, 65); /* Kleur veranderen naar rood wanneer erover wordt bewogen */
+}

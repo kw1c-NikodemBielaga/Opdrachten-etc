@@ -1,0 +1,121 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+body
+{
+    background-image: url(../images/Windows-11-tapeta-wallpaper-3.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.header1
+{
+    background-color: #EDBC73;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.header2
+{
+    background-color: #EDBC73;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.header3
+{
+    background-color: #EDBC73;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.header4
+{
+    background-color: #EDBC73;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+nav ul li
+{
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 25px;
+}
+.navlist a:hover
+{
+    color: rgb(84, 234, 109);
+}
+a
+{
+    color: black;
+}
+.logo
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+span
+{
+    color: rgb(66, 152, 201);
+}
+
+#menu-icon
+{
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+.header-info
+{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    font-size: 30px;
+    color:  rgb(21, 182, 48);
+}
+.header-info h1
+{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.foto1
+{
+    float: right;
+    margin-right: 130px;
+    height: 500px;
+    width: 550px;
+    margin-top: 60px;
+}
+.foto2
+{
+    height: 500px;
+}
+footer
+{
+    position: absolute;
+    display: flex;
+    bottom: 0; /* Afstand vanaf de onderkant van het venster */
+    width: 100%; /* Breedte van de footer */
+    background-color: rgb(37, 155, 155); /* mij eigen Achtergrondkleur van de footer */
+    color: black; /* Tekstkleur zwart van de footer */
+    text-align: center; /* Centreer de tekst */
+    height: 13vh; /* Hoogte van de footer als een percentage van de viewpoorthoogte */
+}
